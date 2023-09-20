@@ -21,13 +21,13 @@ public class payroll {
         int payRate = scanner.nextInt();
 
         System.out.println("Enter the generation date:");
-        String genDate = scanner.nextLine();
+        String genDate = scanner.next();
         
         System.out.flush();
         
         int basicPay = days * payRate;
         int pf = basicPay / 10;
-        final int profTax = (20/100) * basicPay; 
+        final int profTax = (20.0/100.0) * basicPay; 
         int grossEarn = basicPay;
         int totalDeduct = pf + profTax;
         int netPay = basicPay - totalDeduct;
