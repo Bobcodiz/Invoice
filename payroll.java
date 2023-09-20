@@ -27,7 +27,7 @@ public class payroll {
         
         int basicPay = days * payRate;
         int pf = basicPay / 10;
-        int profTax = (20/100) * basicPay; 
+        final int profTax = (20/100) * basicPay; 
         int grossEarn = basicPay;
         int totalDeduct = pf + profTax;
         int netPay = basicPay - totalDeduct;
