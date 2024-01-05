@@ -1,4 +1,4 @@
 # Invoice
 
-class work repo
+just some class assignment repo
 
